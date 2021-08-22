@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(241, 241, 241);
+    margin: 0;
+}
+
+.page-footer{
+    position: static;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.content-main{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: justify;
+    min-height: 90vh; 
+}
+
+.footer-copyright{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.card{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(241, 241, 241);
+    margin: 0;
+}
+
+.card-body a i{
+    font-size: 5rem;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
