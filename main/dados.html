@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dadorama</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- links (BOOTSTRAP, CSS, FONTAWESOME)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/numero-al.css">
+    <script src="https://kit.fontawesome.com/aa8130af24.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <nav class="navbar bg-dark text-white">
+        <a class="navbar-brand" href="../index.html">DADORAMA</a>
+        <div class="from-inline">
+            <button class="btn ml-2 btn-outline-success">
+                LANZAR DADOS
+            </button>
+
+            <button type="button" class="btn btn-danger" id="returnBtn">
+                REGRESAR
+            </button>
+        </div>
+    </nav>
+
+    <!-- Cartas de selección -->
+    <div class="container content-main">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <h4>Esta es una prueba donde eligiras un numero aleatorio, tendras dos opciones, una va a ser elegir un maximo y minimo, y la otra default que sea de 1 a 100</h4>
+                <form id="FormAleatorio">
+                    <div class="mb-3">
+                        <label for="MinInput">Núemero mínimo</label>
+                        <input type="text" class="form-control" id="MinInput" onkeypress="return soloNumeros(event);" placeholder="Digite el número mínimo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="MaxInput" class="form-label">Número máximo</label>
+                        <input type="text" class="form-control" id="MaxInput" onkeypress="return soloNumeros(event);" placeholder="Digite el número máximo">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Número sin repetición</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block">Aleatorio</button>
+
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-6 text-white text-center">
+                <h5 class="card-header bg-dark">
+                    <b>Número generado</b>
+                </h5>
+
+                <div class="div card-body bg-dark">
+                    <h1 id="NumGen">
+                        <b>10</b>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer bg-dark text-white">
+        <div class="footer-copyright font-small text-center py-3">
+            © copyright: El sullivan
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="../assets/js/num.al.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
