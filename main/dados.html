@@ -22,10 +22,6 @@
     <nav class="navbar bg-dark text-white">
         <a class="navbar-brand" href="../index.html">DADORAMA</a>
         <div class="from-inline">
-            <button class="btn ml-2 btn-outline-success">
-                LANZAR DADOS
-            </button>
-
             <button type="button" class="btn btn-danger" id="returnBtn">
                 REGRESAR
             </button>
@@ -39,11 +35,11 @@
                 <h4>Esta es una prueba donde eligiras un numero aleatorio, tendras dos opciones, una va a ser elegir un maximo y minimo, y la otra default que sea de 1 a 100</h4>
                 <form id="FormAleatorio">
                     <div class="mb-3">
-                        <label for="MinInput">Núemero mínimo</label>
+                        <label for="MinInput">Cantidad de dados</label>
                         <input type="text" class="form-control" id="MinInput" onkeypress="return soloNumeros(event);" placeholder="Digite el número mínimo">
                     </div>
                     <div class="mb-3">
-                        <label for="MaxInput" class="form-label">Número máximo</label>
+                        <label for="MaxInput" class="form-label">Cantidad de caras</label>
                         <input type="text" class="form-control" id="MaxInput" onkeypress="return soloNumeros(event);" placeholder="Digite el número máximo">
                     </div>
                     <div class="mb-3 form-check">
@@ -51,20 +47,39 @@
                         <label class="form-check-label" for="exampleCheck1">Número sin repetición</label>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-block">Aleatorio</button>
+                    <button class="btn btn-outline-success col-12">
+                        LANZAR DADOS
+                    </button>
 
+                    <div class="row text-center">
+                        <div class="col">-</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="card-header bg-secondary">
+                                <h5>SUMA DE LOS DADOS</h5>
+                            </div>
+                            <div class="card-body bg-light" id="SumaDados">
+                                <h5>-</h5>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
 
             <div class="col-sm-12 col-md-6 text-white text-center">
                 <h5 class="card-header bg-dark">
-                    <b>Número generado</b>
+                    <b>Lanzamiento de dados</b>
                 </h5>
 
                 <div class="div card-body bg-dark">
-                    <h1 id="NumGen">
-                        <b>10</b>
-                    </h1>
+                    <div class="col-12" id="NumGen">
+                        <img src="../assets/img/DD.png" class="dado" id="ImgDado1">
+                    </div>
+                    <div class="col-12" id="NumGen2">
+                        <img src="../assets/img/DD.png" class="dado" id="ImgDado2">
+                    </div>
                 </div>
             </div>
         </div>

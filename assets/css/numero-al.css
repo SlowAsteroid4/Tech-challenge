@@ -1,3 +1,16 @@
+.dado {
+    opacity: .5;
+    width: 40%;
+}
+
 #NumGen {
-    font-size: 13.5rem;
+    font-size: 12rem;
+}
+
+#NumGen2 {
+    font-size: 12rem;
+}
+
+#SumaDados {
+    font-size: 9rem;
 }
